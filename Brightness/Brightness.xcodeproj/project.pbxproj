@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9F2FC71AA3CAB100F6778A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2FC61AA3CAB100F6778A /* AppDelegate.m */; };
+		0A9F2FC91AA3CAB100F6778A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2FC81AA3CAB100F6778A /* main.m */; };
+		0A9F2FCC1AA3CAB100F6778A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2FCB1AA3CAB100F6778A /* ViewController.m */; };
+		0A9F2FCE1AA3CAB100F6778A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F2FCD1AA3CAB100F6778A /* Images.xcassets */; };
+		0A9F2FD11AA3CAB100F6778A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F2FCF1AA3CAB100F6778A /* Main.storyboard */; };
+		0A9F2FDD1AA3CAB100F6778A /* BrightnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2FDC1AA3CAB100F6778A /* BrightnessTests.m */; };
+		0ABB66B71AA580C0001E037A /* GammaTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66B61AA580C0001E037A /* GammaTable.m */; };
+		0ABB66BA1AA69DCE001E037A /* BrightnessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66B91AA69DCE001E037A /* BrightnessController.m */; };
+		0ABB66BD1AA800AB001E037A /* DisplayInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66BC1AA800AB001E037A /* DisplayInfo.m */; };
+		0ABB66C01AA97D8C001E037A /* DisplayCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66BF1AA97D8C001E037A /* DisplayCollection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A9F2FD71AA3CAB100F6778A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9F2FB81AA3CAB100F6778A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9F2FBF1AA3CAB100F6778A;
+			remoteInfo = Brightness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9F2FC01AA3CAB100F6778A /* Brightness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brightness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9F2FC41AA3CAB100F6778A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9F2FC51AA3CAB100F6778A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A9F2FC61AA3CAB100F6778A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A9F2FC81AA3CAB100F6778A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A9F2FCA1AA3CAB100F6778A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A9F2FCB1AA3CAB100F6778A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A9F2FCD1AA3CAB100F6778A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A9F2FD01AA3CAB100F6778A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A9F2FD61AA3CAB100F6778A /* BrightnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9F2FDB1AA3CAB100F6778A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9F2FDC1AA3CAB100F6778A /* BrightnessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrightnessTests.m; sourceTree = "<group>"; };
+		0ABB66B41AA4FC61001E037A /* Brightness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Brightness.entitlements; sourceTree = "<group>"; };
+		0ABB66B51AA580C0001E037A /* GammaTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GammaTable.h; path = ../GammaTable.h; sourceTree = "<group>"; };
+		0ABB66B61AA580C0001E037A /* GammaTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GammaTable.m; path = ../GammaTable.m; sourceTree = "<group>"; };
+		0ABB66B81AA69DCE001E037A /* BrightnessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessController.h; sourceTree = "<group>"; };
+		0ABB66B91AA69DCE001E037A /* BrightnessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessController.m; sourceTree = "<group>"; };
+		0ABB66BB1AA800AB001E037A /* DisplayInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayInfo.h; sourceTree = "<group>"; };
+		0ABB66BC1AA800AB001E037A /* DisplayInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayInfo.m; sourceTree = "<group>"; };
+		0ABB66BE1AA97D8C001E037A /* DisplayCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayCollection.h; sourceTree = "<group>"; };
+		0ABB66BF1AA97D8C001E037A /* DisplayCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayCollection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A9F2FBD1AA3CAB100F6778A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9F2FD31AA3CAB100F6778A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9F2FB71AA3CAB100F6778A = {
+			isa = PBXGroup;
+			children = (
+				0A9F2FC21AA3CAB100F6778A /* Brightness */,
+				0A9F2FD91AA3CAB100F6778A /* BrightnessTests */,
+				0A9F2FC11AA3CAB100F6778A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A9F2FC11AA3CAB100F6778A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F2FC01AA3CAB100F6778A /* Brightness.app */,
+				0A9F2FD61AA3CAB100F6778A /* BrightnessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A9F2FC21AA3CAB100F6778A /* Brightness */ = {
+			isa = PBXGroup;
+			children = (
+				0ABB66BB1AA800AB001E037A /* DisplayInfo.h */,
+				0ABB66BC1AA800AB001E037A /* DisplayInfo.m */,
+				0ABB66BE1AA97D8C001E037A /* DisplayCollection.h */,
+				0ABB66BF1AA97D8C001E037A /* DisplayCollection.m */,
+				0ABB66B51AA580C0001E037A /* GammaTable.h */,
+				0ABB66B61AA580C0001E037A /* GammaTable.m */,
+				0ABB66B41AA4FC61001E037A /* Brightness.entitlements */,
+				0A9F2FC51AA3CAB100F6778A /* AppDelegate.h */,
+				0A9F2FC61AA3CAB100F6778A /* AppDelegate.m */,
+				0A9F2FCA1AA3CAB100F6778A /* ViewController.h */,
+				0A9F2FCB1AA3CAB100F6778A /* ViewController.m */,
+				0ABB66B81AA69DCE001E037A /* BrightnessController.h */,
+				0ABB66B91AA69DCE001E037A /* BrightnessController.m */,
+				0A9F2FC31AA3CAB100F6778A /* Supporting Files */,
+				0A9F2FCD1AA3CAB100F6778A /* Images.xcassets */,
+				0A9F2FCF1AA3CAB100F6778A /* Main.storyboard */,
+			);
+			path = Brightness;
+			sourceTree = "<group>";
+		};
+		0A9F2FC31AA3CAB100F6778A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F2FC41AA3CAB100F6778A /* Info.plist */,
+				0A9F2FC81AA3CAB100F6778A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9F2FD91AA3CAB100F6778A /* BrightnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F2FDC1AA3CAB100F6778A /* BrightnessTests.m */,
+				0A9F2FDA1AA3CAB100F6778A /* Supporting Files */,
+			);
+			path = BrightnessTests;
+			sourceTree = "<group>";
+		};
+		0A9F2FDA1AA3CAB100F6778A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F2FDB1AA3CAB100F6778A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A9F2FBF1AA3CAB100F6778A /* Brightness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9F2FE01AA3CAB100F6778A /* Build configuration list for PBXNativeTarget "Brightness" */;
+			buildPhases = (
+				0A9F2FBC1AA3CAB100F6778A /* Sources */,
+				0A9F2FBD1AA3CAB100F6778A /* Frameworks */,
+				0A9F2FBE1AA3CAB100F6778A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brightness;
+			productName = Brightness;
+			productReference = 0A9F2FC01AA3CAB100F6778A /* Brightness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A9F2FD51AA3CAB100F6778A /* BrightnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9F2FE31AA3CAB100F6778A /* Build configuration list for PBXNativeTarget "BrightnessTests" */;
+			buildPhases = (
+				0A9F2FD21AA3CAB100F6778A /* Sources */,
+				0A9F2FD31AA3CAB100F6778A /* Frameworks */,
+				0A9F2FD41AA3CAB100F6778A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9F2FD81AA3CAB100F6778A /* PBXTargetDependency */,
+			);
+			name = BrightnessTests;
+			productName = BrightnessTests;
+			productReference = 0A9F2FD61AA3CAB100F6778A /* BrightnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A9F2FB81AA3CAB100F6778A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Kevin;
+				TargetAttributes = {
+					0A9F2FBF1AA3CAB100F6778A = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					0A9F2FD51AA3CAB100F6778A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0A9F2FBF1AA3CAB100F6778A;
+					};
+				};
+			};
+			buildConfigurationList = 0A9F2FBB1AA3CAB100F6778A /* Build configuration list for PBXProject "Brightness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A9F2FB71AA3CAB100F6778A;
+			productRefGroup = 0A9F2FC11AA3CAB100F6778A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A9F2FBF1AA3CAB100F6778A /* Brightness */,
+				0A9F2FD51AA3CAB100F6778A /* BrightnessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A9F2FBE1AA3CAB100F6778A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9F2FCE1AA3CAB100F6778A /* Images.xcassets in Resources */,
+				0A9F2FD11AA3CAB100F6778A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9F2FD41AA3CAB100F6778A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A9F2FBC1AA3CAB100F6778A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9F2FCC1AA3CAB100F6778A /* ViewController.m in Sources */,
+				0A9F2FC91AA3CAB100F6778A /* main.m in Sources */,
+				0ABB66B71AA580C0001E037A /* GammaTable.m in Sources */,
+				0A9F2FC71AA3CAB100F6778A /* AppDelegate.m in Sources */,
+				0ABB66BD1AA800AB001E037A /* DisplayInfo.m in Sources */,
+				0ABB66BA1AA69DCE001E037A /* BrightnessController.m in Sources */,
+				0ABB66C01AA97D8C001E037A /* DisplayCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9F2FD21AA3CAB100F6778A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9F2FDD1AA3CAB100F6778A /* BrightnessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A9F2FD81AA3CAB100F6778A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9F2FBF1AA3CAB100F6778A /* Brightness */;
+			targetProxy = 0A9F2FD71AA3CAB100F6778A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A9F2FCF1AA3CAB100F6778A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9F2FD01AA3CAB100F6778A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A9F2FDE1AA3CAB100F6778A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A9F2FDF1AA3CAB100F6778A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A9F2FE11AA3CAB100F6778A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Brightness/Brightness.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Brightness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A9F2FE21AA3CAB100F6778A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Brightness/Brightness.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Brightness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A9F2FE41AA3CAB100F6778A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrightnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brightness.app/Contents/MacOS/Brightness";
+			};
+			name = Debug;
+		};
+		0A9F2FE51AA3CAB100F6778A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrightnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brightness.app/Contents/MacOS/Brightness";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A9F2FBB1AA3CAB100F6778A /* Build configuration list for PBXProject "Brightness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9F2FDE1AA3CAB100F6778A /* Debug */,
+				0A9F2FDF1AA3CAB100F6778A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9F2FE01AA3CAB100F6778A /* Build configuration list for PBXNativeTarget "Brightness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9F2FE11AA3CAB100F6778A /* Debug */,
+				0A9F2FE21AA3CAB100F6778A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9F2FE31AA3CAB100F6778A /* Build configuration list for PBXNativeTarget "BrightnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9F2FE41AA3CAB100F6778A /* Debug */,
+				0A9F2FE51AA3CAB100F6778A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A9F2FB81AA3CAB100F6778A /* Project object */;
+}

@@ -27,6 +27,6 @@ Some ideas for improvements:
   * Debug the occasional crashes. Clean up the code.
   * Rewrite the code in swift. Maybe rewrite the code, period. I don't pretend that it's very good as it is.
   * Find a robust way to control a non-apple monitors actual backlight brightess. There have been attempts at this before, but they are seem kind of hacky and have actually crashed my computer before! This is highly dependent on the GPU of the computer, and the external monitor itself. Most monitors seem to support this via https://en.wikipedia.org/wiki/Display_Data_Channel which should be present on all of  Displayport(thunderbolt), DVI, HDMI, VGA. Doing this well would have the effect of Much Better contrast at low brightness levels, which is the lame part of doing the brightness this way.
-  * Perhaps a USB dongle could act as a middle man for the DDC control, using a microcontroller to send instructions to the monitor. This would be a Displayport passthru device, basically, that can inject additional DDC commands. I know, this is incredibly hacky. Argh!
+  * Perhaps a USB dongle could act as a middle man for the DDC control, using a microcontroller to send instructions to the monitor. This would be a Displayport passthru device, basically, that can inject additional DDC commands. Read starting pg 89 here, if you don't immediately think this is a terrible idea: http://ftp.cis.nctu.edu.tw/csie/Software/X11/private/VeSaSpEcS/VESA_Document_Center_Video_Interface/DportV1.1.pdf
 
 License: Artistic License 2.0, thanks Larry.

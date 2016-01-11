@@ -97,6 +97,7 @@ const int maxDisplays=1000;
     
     
     CGDisplayRestoreColorSyncSettings();
+    
     //self.dict = [self getDisplayGammaTableMapping]; //remove soon
     //self.lastCheckedActiveDisplays = [BrightnessController getActiveDisplays];
     self.displayCollection = [DisplayCollection makeFromCurrentlyActiveDisplays];
@@ -111,7 +112,30 @@ const int maxDisplays=1000;
 
 //A notification named NSApplicationDidChangeScreenParametersNotification. Calling the object method of this notification returns the NSApplication object itself.
 -(void) applicationDidChangeScreenParameters:(NSNotification*) notification{
-    [self reinitialize: notification.name];
+    
+    //Check if the display list actually changed, don't do anything if no change.
+    
+    
+    DisplayCollection * newDisplayCollection =[DisplayCollection makeFromCurrentlyActiveDisplays];
+    BOOL somethingChanged = false;
+    if([newDisplayCollection.displays count] != [self.displayCollection.displays count]){
+        somethingChanged = true;
+    }else{
+        for(int i=0;i<[newDisplayCollection.displays count];i++){
+            DisplayInfo * theOld = self.displayCollection.displays[i];
+            DisplayInfo * theNew = newDisplayCollection.displays[i];
+            if(theOld.displayID != theNew.displayID){
+                somethingChanged = true;
+                break;
+            }
+        }
+    }
+    if(somethingChanged){
+        [self reinitialize: notification.name];
+    }else{
+        NSLog(@"Got display config changed notification, but nothing really changed... Not reintializing.");
+    }
+    
 }
 
 - (void) receiveWakeNote: (NSNotification*) note{

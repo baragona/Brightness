@@ -14,12 +14,11 @@ How it works:
   * Periodically, copy the brightness to all other monitors.
   * Two methods are available for setting brightness, which I call Real and Fake.
   * Real is supported on apple monitors. There turns out to be a semi-documented api for doing setting brightness. This stuff is sort of on the fringes of what is offically supported by Apple!
-  * Fake is supported on all monitors. This is done using the graphics card Gamma Table. Which basically maps RGB values to new RGB values. It is meant for color correction, but brightness correction is a subset of that. The original gamma table is read, and then scaled downward. (It does this the easy way now, but what might be better is to stretch the gamma table rightward, using interpolation. This could preserve color better while dimming? I thought I did this, but apparently it's doing it the dumb way...) 
+  * Fake is supported on all monitors. This is done using the graphics card Gamma Table. Which basically maps RGB values to new RGB values. It is meant for color correction, but brightness correction is a subset of that. The original gamma table is read, and then scaled downward. (It does this the easy way now, but what might be better is to stretch the gamma table rightward, using interpolation. This could preserve color better while dimming? I thought I did this, but apparently it's doing it the dumb way...)
   * Because OSX will auto control the brightness of an apple external monitor, there is not much point to syncing it with this app. And it sort of does odd stuff sometimes when you do that.
 
 Some ideas for improvements:
   * increase the refresh rate from 1hz, make it user-settable.
-  * find a way to disable app nap? Sometimes the app seems to stop syncing for a while, but not due to anything the app has done. OSX seems to pause apps when it thinks they don't matter.
   * Make it compatible with apple thunderbolt displays. (Basically, detect when the display can already control its own brightness and turn off the syncing.)
   * Add a Menu Bar widget for controlling brightness. I haven't needed this, because the keyboard (including USB keyboards) have buttons for controlling internal brightness, which is then synced to the external.
   * Turn off the dock icon. This is easy, but not a good idea until there is a proper menu bar UI.

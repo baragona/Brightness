@@ -39,6 +39,9 @@
                                                                selector: @selector(receiveWakeNote:)
                                                                    name: notification object: NULL];
     }
+    
+    self.appNapPreventionActivity = [[NSProcessInfo processInfo] beginActivityWithOptions:NSActivityUserInitiated reason:@"Prevent app nap from pausingpausing brightness sync."];
+    
     /*
      
      //Status Bar

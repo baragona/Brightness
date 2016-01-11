@@ -17,5 +17,7 @@
 @property (strong, nonatomic) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) NSStatusItem *statusItem;
 
+@property NSObject * appNapPreventionActivity;
+
 @end
 

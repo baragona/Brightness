@@ -40,7 +40,7 @@
                                                                    name: notification object: NULL];
     }
     
-    self.appNapPreventionActivity = [[NSProcessInfo processInfo] beginActivityWithOptions:NSActivityUserInitiated reason:@"Prevent app nap from pausingpausing brightness sync."];
+    self.appNapPreventionActivity = [[NSProcessInfo processInfo] beginActivityWithOptions:NSActivityUserInitiated reason:@"Prevent app nap from pausing brightness sync."];
     
     /*
      

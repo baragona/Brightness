@@ -182,16 +182,12 @@ const int maxDisplays=1000;
     float target = self.targetBrightness;
     for (DisplayInfo * dispInfo in self.displayCollection.displays){
         @try{
+            if(dispInfo == self.drivingDisplay){
+                // dont set brightness of driving display
+                continue;
+            }
             if(dispInfo.canSetRealBrightness){
-                if(dispInfo == self.drivingDisplay){
-                    //NSLog(@"Not setting real brightness of a driving display");
-                }else{
-                    float current = [dispInfo getRealBrightness]; // throws
-                    if(meticulous || fabs(target - current) > .001){
-                        NSLog(@"Setting Real brightness");
-                        [dispInfo setRealBrightness:target]; // throws
-                    }
-                }
+                // assume the brightness of a display where real brightness can be set doesn't need synching.
             }else{
                 float current = [dispInfo getFakeBrightness]; // throws
                 if(meticulous || fabs(target - current) > .001){

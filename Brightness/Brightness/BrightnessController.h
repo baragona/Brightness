@@ -22,6 +22,8 @@
 
 @property float targetBrightness;
 
+@property bool reinitializeOnNextRefresh;
+
 - (void) start;
 -(void) applicationDidChangeScreenParameters:(NSNotification*) notification;
 - (void) receiveWakeNote: (NSNotification*) note;

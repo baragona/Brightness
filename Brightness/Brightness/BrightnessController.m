@@ -86,6 +86,7 @@ const int maxDisplays=1000;
 - (void) start{
     self.targetBrightness=1.0;
     self.lastReinitializedAt = 0.0;
+    self.reinitializeOnNextRefresh = false;
     [self reinitialize: @"Just starting up"];
     
 }
@@ -108,6 +109,7 @@ const int maxDisplays=1000;
     [self updateAllDisplaysWithMeticulousness:YES];
     NSTimeInterval time_now = [[NSProcessInfo processInfo] systemUptime];
     self.lastReinitializedAt = time_now;
+    self.reinitializeOnNextRefresh = false;
 }
 
 //A notification named NSApplicationDidChangeScreenParametersNotification. Calling the object method of this notification returns the NSApplication object itself.
@@ -213,6 +215,7 @@ const int maxDisplays=1000;
             @catch ( NSException *e ) {
                 NSLog(@"Error getting brightness %@", e);
                 failed=1;
+                self.reinitializeOnNextRefresh = true;
             }
             if(!failed){
                 self.targetBrightness = b;
@@ -226,7 +229,10 @@ const int maxDisplays=1000;
 }
 
 - (void) refresh{
-    
+    if(self.reinitializeOnNextRefresh){
+        [self reinitialize:@"Last refresh failed"];
+        return;
+    }
     BOOL meticulous;
     NSTimeInterval time_now = [[NSProcessInfo processInfo] systemUptime];
     if(time_now - self.lastReinitializedAt < 6.0){

@@ -1,7 +1,7 @@
 # Brightness
 Sync macbook screen brightness to non-Apple external display.
 
-It has no UI whatsoever, infrequently crashes, and does not work very well when paired with a external Apple monitor. It occasionally fails to sync the brightness for a moment.
+It has no UI whatsoever. Just a dock Icon.
 
 Pull requests welcome!
 

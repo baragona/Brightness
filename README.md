@@ -1,6 +1,8 @@
 # Brightness
 Sync macbook screen brightness to non-Apple external display.
 
+UPDATE: it still works on High Sierra. It also seems to not conflict with Night Shift.
+
 It has no UI whatsoever. Just a dock Icon.
 
 Pull requests welcome!
@@ -18,6 +20,7 @@ How it works:
   * Because OSX will auto control the brightness of an apple external monitor, there is not much point to syncing it with this app. And it sort of does odd stuff sometimes when you do that.
 
 Some ideas for improvements:
+  * Rewrite it in Swift, Duh.
   * increase the refresh rate from 1hz, make it user-settable.
   * Make it compatible with apple thunderbolt displays. (Basically, detect when the display can already control its own brightness and turn off the syncing.)
   * Add a Menu Bar widget for controlling brightness. I haven't needed this, because the keyboard (including USB keyboards) have buttons for controlling internal brightness, which is then synced to the external.

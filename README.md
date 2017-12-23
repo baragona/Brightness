@@ -5,7 +5,7 @@ UPDATE: it still works on High Sierra. It also seems to not conflict with Night 
 
 Debug build from high sierra xcode 9 here: https://www.dropbox.com/s/qit5awr1dop2fei/Brightness.app.zip?dl=0
 
-It has no UI whatsoever. Just a dock Icon.
+It has no UI whatsoever. Just a menu item that allows quitting.
 
 Pull requests welcome!
 

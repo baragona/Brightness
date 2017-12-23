@@ -23,10 +23,8 @@ How it works:
 
 Some ideas for improvements:
   * Rewrite it in Swift, Duh.
-  * increase the refresh rate from 1hz, make it user-settable.
   * Make it compatible with apple thunderbolt displays. (Basically, detect when the display can already control its own brightness and turn off the syncing.)
   * Add a Menu Bar widget for controlling brightness. I haven't needed this, because the keyboard (including USB keyboards) have buttons for controlling internal brightness, which is then synced to the external.
-  * Turn off the dock icon. This is easy, but not a good idea until there is a proper menu bar UI.
   * Incorporate pretty much all the good ideas from F.lux, but open source! Why not?
   * Debug the occasional crashes. Clean up the code.
   * Rewrite the code in swift. Maybe rewrite the code, period. I don't pretend that it's very good as it is.

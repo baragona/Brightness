@@ -187,6 +187,7 @@
 				TargetAttributes = {
 					0A9F2FBF1AA3CAB100F6778A = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9294MV26ES;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -365,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Brightness/Brightness.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9294MV26ES;
 				INFOPLIST_FILE = Brightness/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";

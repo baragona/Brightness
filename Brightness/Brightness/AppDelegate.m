@@ -22,7 +22,7 @@
     self.brightCtrl = [[BrightnessController alloc] init];
     
     [self.brightCtrl start];
-    NSTimer * timer = [NSTimer timerWithTimeInterval:1.0 target:self.brightCtrl selector:@selector(refresh) userInfo:nil repeats:YES];
+    NSTimer * timer = [NSTimer timerWithTimeInterval:0.1 target:self.brightCtrl selector:@selector(refresh) userInfo:nil repeats:YES];
     NSRunLoop * mainLoop = [NSRunLoop mainRunLoop];
     [mainLoop addTimer:timer forMode:NSRunLoopCommonModes];
     
@@ -42,15 +42,15 @@
     
     self.appNapPreventionActivity = [[NSProcessInfo processInfo] beginActivityWithOptions:NSActivityUserInitiated reason:@"Prevent app nap from pausing brightness sync."];
     
-    /*
+    
      
      //Status Bar
-     
+    
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setMenu:self.statusMenu];
-    [self.statusItem setTitle:@"My App"];
+    [self.statusItem setTitle:@"☀"];
     [self.statusItem setHighlightMode:YES];
-    */
+    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

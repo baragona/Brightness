@@ -1,12 +1,15 @@
 # Brightness
 Sync macbook screen brightness to non-Apple external display.
+It has no UI whatsoever. Just a menu item that allows quitting.
 
 UPDATE: it still works on High Sierra. It also seems to not conflict with Night Shift.
 
-Debug build from high sierra xcode 9 here: https://www.dropbox.com/s/qit5awr1dop2fei/Brightness.app.zip?dl=0
+# Installation
+Download the precompiled app here: https://www.dropbox.com/s/qit5awr1dop2fei/Brightness.app.zip?dl=0
+(Debug build from high sierra xcode 9)
+Unzip and run the app. A "sun" icon appears in the menu bar, that is the only UI for now, and it only allows quitting.
 
-It has no UI whatsoever. Just a menu item that allows quitting.
-
+# Other Thoughts
 Pull requests welcome!
 
 How it works:

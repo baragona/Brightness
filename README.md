@@ -6,7 +6,9 @@ UPDATE: it still works on High Sierra. It also seems to not conflict with Night 
 
 # Installation
 Download the precompiled app here: https://www.dropbox.com/s/qit5awr1dop2fei/Brightness.app.zip?dl=0
+
 (Debug build from high sierra xcode 9)
+
 Unzip and run the app. A "sun" icon appears in the menu bar, that is the only UI for now, and it only allows quitting.
 
 # Other Thoughts

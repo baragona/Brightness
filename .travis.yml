@@ -1,3 +1,10 @@
 language: objective-c
-xcode_project: Brightness/Brightness.xcodeproj # path to your xcodeproj folder
+xcode_project: Brightness/Brightness.xcodeproj
 xcode_scheme: Brightness
+deploy:
+  provider: releases
+  api_key:
+    secure: tt0dVSuBfRClMKf7RMB+fMnQJdpZHUgaJciYqApOuWejlpvRtUZsW+vE1Tj43IiD8NRDE16fYGgXEv5ch70YxgGgetk8DTQoBgG1yt7B9hCq5YlIInfwaLPi9EH0f/bk4NXb6V+1vO9ahneeXjN2RMHBhb4QUoPNwZ2w55oo0txaU9dZRP1MlrKqYYVjCeoS1PsSBA17EvCD5qBo9KqUrPrfyf8MSmpHTXSoRySeNWtpjZwJLSjBKBD/r4VbPFVloevFockUG6c+jEeHbYekhFKWbr+S8W2jaVnBsUXdf19KOcGBkmcjfhNc+lcy8uq0v3kW+HfYnB0R4+rNu1PBMqgECA0KsPs0UAekKGIDEnyrlSddcYaqON70ZdGpULF43sXw+MkzUpxmIUuXGuPmyr5LAXr1igWy2FbCdppG5U5GHtnNT57LQ8XAKUCqxfJjK4tKn38dDs9chvNI0/SQ0xtnbtj/jK3aCCbIOSYVEDevYNjbgJ3zKv4TiGrGx1feJsndvQH2FndK3abUR64IX3ebxc2Q4/DHGRah8Ukz/62hjQrnquCwDNV2loRdeEKyn/PNHf5T2UJ6EIkev+VGxC0IN3iLAsuCRYF/aaMeGvkZLwxIoycKAe6Y2DlUDC6U449VRbDzd7FaovMS32+Gv6LWrKCCWrjxNgUJaj8src0=
+  file: Brightness.app
+  on:
+    repo: ojotoxy/Brightness

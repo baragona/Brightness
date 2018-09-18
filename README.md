@@ -5,7 +5,7 @@ It has no UI whatsoever. Just a menu item that allows quitting.
 UPDATE: it still works on High Sierra. It also seems to not conflict with Night Shift.
 
 # Installation
-Download the precompiled app here: https://www.dropbox.com/s/qit5awr1dop2fei/Brightness.app.zip?dl=0
+Download the precompiled app here: https://github.com/ojotoxy/Brightness/releases
 
 (Debug build from high sierra xcode 9)
 

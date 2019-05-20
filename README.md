@@ -29,7 +29,6 @@ How it works:
 Some ideas for improvements:
   * Rewrite it in Swift, Duh.
   * Make it compatible with apple thunderbolt displays. (Basically, detect when the display can already control its own brightness and turn off the syncing.)
-  * Add a Menu Bar widget for controlling brightness. I haven't needed this, because the keyboard (including USB keyboards) have buttons for controlling internal brightness, which is then synced to the external.
   * Incorporate pretty much all the good ideas from F.lux, but open source! Why not?
   * Debug the occasional crashes. Clean up the code.
   * Rewrite the code in swift. Maybe rewrite the code, period. I don't pretend that it's very good as it is.

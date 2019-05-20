@@ -5,9 +5,9 @@ Has a menu item to adjust brightness on all monitors simultaneously.
 It works on Mojave. It also seems to not conflict with Night Shift.
 
 # Installation
-Download the precompiled app here: https://github.com/ojotoxy/Brightness/releases
+Download the precompiled app here: https://github.com/ojotoxy/Brightness/releases/tag/with-slider
 
-(Debug build from high sierra xcode 9)
+(Debug build from Mojave xcode 10.2)
 
 Unzip and run the app. A "sun" icon appears in the menu bar, it has a slider to control brightness on all monitors simulataneously.
 

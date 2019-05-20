@@ -7,6 +7,7 @@
 //
 
 #import "BrightnessController.h"
+#import "AppDelegate.h"
 
 const int maxDisplays=1000;
 
@@ -182,6 +183,7 @@ const int maxDisplays=1000;
 - (void) updateAllDisplaysWithMeticulousness: (BOOL) meticulous{
     [self updateTargetBrightness];
     float target = self.targetBrightness;
+    [(AppDelegate *)self.appDelegate handleTargetBrightnessChanged: target];
     for (DisplayInfo * dispInfo in self.displayCollection.displays){
         @try{
             if(dispInfo == self.drivingDisplay){
@@ -227,6 +229,17 @@ const int maxDisplays=1000;
         NSLog(@"No driving display -- keeping old brightness");
     }
 }
+
+- (void) setDesiredBrightnessManually: (float) desiredBrightness{
+    self.targetBrightness = desiredBrightness;
+    if(self.drivingDisplay){
+        if(CGDisplayIsActive(self.drivingDisplay.displayID)){
+            [self.drivingDisplay setRealBrightness:self.targetBrightness];
+        }
+    }
+    [self updateAllDisplaysWithMeticulousness:YES];
+}
+
 
 - (void) refresh{
     if(self.reinitializeOnNextRefresh){

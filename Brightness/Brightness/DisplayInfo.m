@@ -207,6 +207,21 @@ static CGError setBrightnessForDisplayServicePort(io_service_t displayPort, floa
 }
 
 - (void) setRealBrightness: (float) brightness{
+    /*
+    if(brightness <= .1){
+        // Set fake brightness to go even lower than apple allows!
+        float compensatingFakeBrightness = brightness*10;
+        [self setFakeBrightness:compensatingFakeBrightness];
+        brightness = .1;
+
+    }else{
+        //[self setFakeBrightness:1.0];
+    }
+    float currentBrightness = [self getRealBrightness];
+    if(currentBrightness == brightness){
+        NSLog(@"Not updating real brighntess, already at correct value");
+    }
+     */
     if(self.IOServicePort){
         CGError err = setBrightnessForDisplayServicePort(self.IOServicePort, brightness);
         if(err){
@@ -221,6 +236,7 @@ static CGError setBrightnessForDisplayServicePort(io_service_t displayPort, floa
                 reason:@"Does not have an IO service Port"
                 userInfo:nil];
     }
+
 }
 
 - (float) getFakeBrightness{

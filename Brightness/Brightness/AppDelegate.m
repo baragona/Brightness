@@ -21,6 +21,8 @@
     
     self.brightCtrl = [[BrightnessController alloc] init];
     
+    self.brightCtrl.appDelegate = self;
+    
     [self.brightCtrl start];
     NSTimer * timer = [NSTimer timerWithTimeInterval:0.1 target:self.brightCtrl selector:@selector(refresh) userInfo:nil repeats:YES];
     NSRunLoop * mainLoop = [NSRunLoop mainRunLoop];
@@ -51,7 +53,42 @@
     [self.statusItem setTitle:@"☀"];
     [self.statusItem setHighlightMode:YES];
     
+    id block = [^{
+        NSLog(@"Got a slider event");
+        float newValue = [self.statusSlider floatValue];
+        NSLog(@"%.2f", newValue);
+
+    } copy];// Don't forget to -release.
+
+    self.statusSlider = [NSSlider sliderWithTarget:self action:@selector(handleSliderSlide)];
+    [self.statusSlider setFrameSize: NSMakeSize(160, 32)];
+
+    NSMenuItem* mi = [[NSMenuItem alloc]
+                      initWithTitle:@"Slider:"
+                      action:Nil
+                      keyEquivalent:@""];
+    [mi setView:self.statusSlider];
+    [mi ]
+    
+    [self.statusMenu insertItem:mi atIndex: 0];
+
+    
 }
+
+- (void) handleSliderSlide {
+    NSLog(@"Got a slider event");
+    float newValue = [self.statusSlider floatValue];
+    NSLog(@"%.2f", newValue);
+    [self.brightCtrl setDesiredBrightnessManually: newValue];
+    
+}
+- (void) handleTargetBrightnessChanged: (float)newTarget {
+    //NSLog(@"Got a target brightness change event");
+    [self.statusSlider setFloatValue:newTarget];
+
+    
+}
+
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application

@@ -23,9 +23,12 @@
 @property float targetBrightness;
 
 @property bool reinitializeOnNextRefresh;
+@property(nonatomic) id appDelegate; //eww
 
 - (void) start;
 -(void) applicationDidChangeScreenParameters:(NSNotification*) notification;
 - (void) receiveWakeNote: (NSNotification*) note;
 - (void) refresh;
+- (void) setDesiredBrightnessManually: (float) desiredBrightness;
+
 @end

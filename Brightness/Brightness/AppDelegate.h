@@ -16,7 +16,9 @@
 
 @property (strong, nonatomic) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) NSStatusItem *statusItem;
+@property (strong, nonatomic) NSSlider *statusSlider;
 
+- (void) handleTargetBrightnessChanged: (float)newTarget ;
 @property NSObject * appNapPreventionActivity;
 
 @end

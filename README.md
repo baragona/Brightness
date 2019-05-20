@@ -2,7 +2,7 @@
 Sync macbook screen brightness to non-Apple external display.
 It has no UI whatsoever. Just a menu item that allows quitting.
 
-UPDATE: it still works on High Sierra. It also seems to not conflict with Night Shift.
+UPDATE: it still works on Mojave. It also seems to not conflict with Night Shift.
 
 # Installation
 Download the precompiled app here: https://github.com/ojotoxy/Brightness/releases

@@ -1,15 +1,15 @@
 # Brightness
 Sync macbook screen brightness to non-Apple external display.
-It has no UI whatsoever. Just a menu item that allows quitting.
+Has a menu item to adjust brightness on all monitors simultaneously.
 
-UPDATE: it still works on Mojave. It also seems to not conflict with Night Shift.
+It works on Mojave. It also seems to not conflict with Night Shift.
 
 # Installation
 Download the precompiled app here: https://github.com/ojotoxy/Brightness/releases
 
 (Debug build from high sierra xcode 9)
 
-Unzip and run the app. A "sun" icon appears in the menu bar, that is the only UI for now, and it only allows quitting.
+Unzip and run the app. A "sun" icon appears in the menu bar, it has a slider to control brightness on all monitors simulataneously.
 
 # Other Thoughts
 Pull requests welcome!

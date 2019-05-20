@@ -42,6 +42,12 @@
         productIDRef = CFDictionaryGetValue(info,
                                             CFSTR(kDisplayProductID));
         
+        if(vendorIDRef == NULL || productIDRef == NULL){
+            success = false;
+            CFRelease(info);
+            continue;
+        }
+        
         success = CFNumberGetValue(vendorIDRef, kCFNumberCFIndexType,
                                    &vendorID);
         success &= CFNumberGetValue(productIDRef, kCFNumberCFIndexType,

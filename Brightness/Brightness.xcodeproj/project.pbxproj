@@ -12,22 +12,11 @@
 		0A9F2FCC1AA3CAB100F6778A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2FCB1AA3CAB100F6778A /* ViewController.m */; };
 		0A9F2FCE1AA3CAB100F6778A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F2FCD1AA3CAB100F6778A /* Images.xcassets */; };
 		0A9F2FD11AA3CAB100F6778A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F2FCF1AA3CAB100F6778A /* Main.storyboard */; };
-		0A9F2FDD1AA3CAB100F6778A /* BrightnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2FDC1AA3CAB100F6778A /* BrightnessTests.m */; };
 		0ABB66B71AA580C0001E037A /* GammaTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66B61AA580C0001E037A /* GammaTable.m */; };
 		0ABB66BA1AA69DCE001E037A /* BrightnessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66B91AA69DCE001E037A /* BrightnessController.m */; };
 		0ABB66BD1AA800AB001E037A /* DisplayInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66BC1AA800AB001E037A /* DisplayInfo.m */; };
 		0ABB66C01AA97D8C001E037A /* DisplayCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB66BF1AA97D8C001E037A /* DisplayCollection.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A9F2FD71AA3CAB100F6778A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A9F2FB81AA3CAB100F6778A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A9F2FBF1AA3CAB100F6778A;
-			remoteInfo = Brightness;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A9F2FC01AA3CAB100F6778A /* Brightness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brightness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +28,6 @@
 		0A9F2FCB1AA3CAB100F6778A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A9F2FCD1AA3CAB100F6778A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A9F2FD01AA3CAB100F6778A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A9F2FD61AA3CAB100F6778A /* BrightnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A9F2FDB1AA3CAB100F6778A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A9F2FDC1AA3CAB100F6778A /* BrightnessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrightnessTests.m; sourceTree = "<group>"; };
 		0ABB66B41AA4FC61001E037A /* Brightness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Brightness.entitlements; sourceTree = "<group>"; };
 		0ABB66B51AA580C0001E037A /* GammaTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GammaTable.h; path = ../GammaTable.h; sourceTree = "<group>"; };
 		0ABB66B61AA580C0001E037A /* GammaTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GammaTable.m; path = ../GammaTable.m; sourceTree = "<group>"; };
@@ -61,13 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A9F2FD31AA3CAB100F6778A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				0A9F2FC21AA3CAB100F6778A /* Brightness */,
-				0A9F2FD91AA3CAB100F6778A /* BrightnessTests */,
 				0A9F2FC11AA3CAB100F6778A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				0A9F2FC01AA3CAB100F6778A /* Brightness.app */,
-				0A9F2FD61AA3CAB100F6778A /* BrightnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,23 +98,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A9F2FD91AA3CAB100F6778A /* BrightnessTests */ = {
-			isa = PBXGroup;
-			children = (
-				0A9F2FDC1AA3CAB100F6778A /* BrightnessTests.m */,
-				0A9F2FDA1AA3CAB100F6778A /* Supporting Files */,
-			);
-			path = BrightnessTests;
-			sourceTree = "<group>";
-		};
-		0A9F2FDA1AA3CAB100F6778A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A9F2FDB1AA3CAB100F6778A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,31 +118,13 @@
 			productReference = 0A9F2FC01AA3CAB100F6778A /* Brightness.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A9F2FD51AA3CAB100F6778A /* BrightnessTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A9F2FE31AA3CAB100F6778A /* Build configuration list for PBXNativeTarget "BrightnessTests" */;
-			buildPhases = (
-				0A9F2FD21AA3CAB100F6778A /* Sources */,
-				0A9F2FD31AA3CAB100F6778A /* Frameworks */,
-				0A9F2FD41AA3CAB100F6778A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A9F2FD81AA3CAB100F6778A /* PBXTargetDependency */,
-			);
-			name = BrightnessTests;
-			productName = BrightnessTests;
-			productReference = 0A9F2FD61AA3CAB100F6778A /* BrightnessTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0A9F2FB81AA3CAB100F6778A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Kevin;
 				TargetAttributes = {
 					0A9F2FBF1AA3CAB100F6778A = {
@@ -193,10 +135,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					0A9F2FD51AA3CAB100F6778A = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 0A9F2FBF1AA3CAB100F6778A;
 					};
 				};
 			};
@@ -214,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				0A9F2FBF1AA3CAB100F6778A /* Brightness */,
-				0A9F2FD51AA3CAB100F6778A /* BrightnessTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,13 +163,6 @@
 			files = (
 				0A9F2FCE1AA3CAB100F6778A /* Images.xcassets in Resources */,
 				0A9F2FD11AA3CAB100F6778A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A9F2FD41AA3CAB100F6778A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,23 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A9F2FD21AA3CAB100F6778A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A9F2FDD1AA3CAB100F6778A /* BrightnessTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A9F2FD81AA3CAB100F6778A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A9F2FBF1AA3CAB100F6778A /* Brightness */;
-			targetProxy = 0A9F2FD71AA3CAB100F6778A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A9F2FCF1AA3CAB100F6778A /* Main.storyboard */ = {
@@ -306,6 +220,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -360,6 +275,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -413,44 +329,6 @@
 			};
 			name = Release;
 		};
-		0A9F2FE41AA3CAB100F6778A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BrightnessTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brightness.app/Contents/MacOS/Brightness";
-			};
-			name = Debug;
-		};
-		0A9F2FE51AA3CAB100F6778A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BrightnessTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "initech.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brightness.app/Contents/MacOS/Brightness";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,15 +346,6 @@
 			buildConfigurations = (
 				0A9F2FE11AA3CAB100F6778A /* Debug */,
 				0A9F2FE21AA3CAB100F6778A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A9F2FE31AA3CAB100F6778A /* Build configuration list for PBXNativeTarget "BrightnessTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A9F2FE41AA3CAB100F6778A /* Debug */,
-				0A9F2FE51AA3CAB100F6778A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

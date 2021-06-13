@@ -2,7 +2,7 @@
 Sync macbook screen brightness to non-Apple external display.
 Has a menu item to adjust brightness on all monitors simultaneously.
 
-It works on Catalina. It also seems to not conflict with Night Shift.
+It works on Big Sur. It also seems to not conflict with Night Shift.
 
 # Installation
 Download the precompiled app here: https://github.com/ojotoxy/Brightness/releases/tag/with-slider

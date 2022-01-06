@@ -1,3 +1,9 @@
+# No Longer maintained!
+
+Use this project instead: https://github.com/MonitorControl/MonitorControl#readme
+
+They have made a much better tool than this one.
+
 # Brightness
 Sync macbook screen brightness to non-Apple external display.
 Has a menu item to adjust brightness on all monitors simultaneously.
